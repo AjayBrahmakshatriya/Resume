@@ -1,0 +1,8 @@
+*.pdf
+!images/*.pdf
+*.out
+*.log
+*.aux
+*.blg
+*.bbl
+main/
