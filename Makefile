@@ -6,10 +6,9 @@ pdf:
 website: 
 	rm -rf main/
 	latex2html -split +0 -info "" -nofootnode -no_navigation -ascii_mode main.tex
-	sed -i 's/<HR>//g' main/main.html
-	sed -i 's/<BIG CLASS="XXLARGE">/<SPAN>/g' main/main.html
-	sed -i 's/<\BIG>/<\SPAN>/g' main/main.html
-
+	python post_process.py
+	
+	cat append.css >> main/main.css
 
 clean:
 	rm -rf main/

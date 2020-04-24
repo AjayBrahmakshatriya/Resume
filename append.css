@@ -1,0 +1,12 @@
+
+@font-face {
+font-family: 'optima';
+font-style: normal;
+font-weight: normal;
+src: local('optima'), url('https://intimeand.space/css/optima.woff') format('woff');
+}
+
+body {
+	font-family: optima;
+	line-height: 2em;
+}
