@@ -2,6 +2,8 @@ all:	pdf
 pdf:
 	pdflatex main.tex
 	pdflatex main.tex
+	pdflatex main.tex
+	pdflatex main.tex
 
 website: 
 	rm -rf main/

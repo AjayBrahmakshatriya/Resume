@@ -7,6 +7,8 @@
 \usepackage[left=1in,top=1in,right=1in,bottom=1in,nohead]{geometry}
 
 \newcommand{\punt}[1]{}
+\newcommand{\textbfx}[1]{{\bf #1}}
+\newcommand{\textitx}[1]{{\it #1}}
 
 \textwidth 6.65truein
 \textheight 9.5truein
@@ -75,22 +77,6 @@ July'09-June'10 	&{\bf J.H. Ambani School, Central Board for Secondary Education
 \section*{Interests}
 Programming languages, Compiler and Systems research
 
-\section*{Publications}
-\begin{tabular}{l!{\VRule}p{15cm}}
-%\begin{longtable}{l!{\VRule} p{15cm} !{\VRule}}
-
-%PLDI'18  & {\bf An Instrumenting Compiler for Enforcing Confidentiality in Low-Level Code } \\
-%(\textit{Under submission}) & \\
-%\\
-%PLDI'20 & {\bf Universal Graph Framework: AchievingHigh-Performance across Algorithms, Graph Types, and Architectures} \textit{(Under submission)} \\ \\
-CGO'21 & {\bf BuildIt: A type based multistage programming framework for code generation in C++} \\ \\
-CGO'21 & {\bf Techniques for compiling graph applications for GPUs} \\ \\
-CGO'20 & {\bf PriorityGraph: A Unified Programming Model for Optimizing Ordered Graph Algorithms} \\ \\ 
-IISWC'19 & {\bf BHive: A Benchmark Suite and Measurement Framework for Validating x86-64 Basic Block Performance Models} \\ \\
-EUROSYS'19 & {\bf ConfLLVM: A Compiler for Enforcing Data Confidentiality in Low-Level Code} \\ \\
-GLOBECOM'16 & {\bf LWIR: LTE-WLAN Integration at RLC Layer with Virtual WLAN Scheduler for Efficient Aggregation } \\
-%\end{longtable}
-\end{tabular}
 
 \section*{Work Experience}
 \begin{tabular}{l!{\VRule}p{15cm}}
@@ -103,50 +89,53 @@ May'15-July'15 & {\bf Intern, Software Development Engineer, Amazon India, Banga
 \section*{Current Research Projects}
 %\begin{tabular}{l!{\VRule}p{15cm}!{\VRule}}
 \begin{longtable}{l!{\VRule} p{15cm} }
+May'20-Present & {\bf LakePlacid: Separating the Best from the Rest to Improve Latency of Single-Application Deployments} \\
+Advisor & {\bf Prof. Saman Amarasinghe and Prof. Manya Ghobadi} \\
+ & Optimizing network applications and network stack implementations using compiler techniques \newline \\
 
-September'18-Present & {\bf A Unified Graph Framework for Achieving High-Performance across Algorithms, Graph Types,and Architectures} \\ 
-Advisor       & {\bf Prof. Saman Amarasinghe, Prof. Julian Shun} \\ 
- & Generating effecient CUDA code for graph algorithms. New GraphIR for portable code generation across multiple platforms. \newline \\
- 
 January'19-Present & {\bf BuildIt: A type based multi-stage programming language extension for imperative languages} \\
 Advisor       & {\bf Prof. Saman Amarasinghe} \\
  & A type based multi-stage programming library for imperative languages like C++ \newline \\
 
-\punt{
-July'16-July'18 & {\bf An Instrumenting Compiler for Enforcing Confidentiality in Low-Level Code } \\
-Advisor       & {\bf Dr. Akash Lal, Senior Researcher, MSR India} \\
- & Memory partitioning and instrumentation techniques for preventing leak of confidential data in low level languages in presence of active attackers. \newline \\
-
-August'15-January'16 & {\bf LWIR: LTE-WLAN Integration at RLC Layer with Virtual WLAN Scheduler for Efficient Aggregation} \\
-Advisor        & {\bf Dr. Bheemarjuna Reddy Tamma, Professor, CSE department, IIT Hyderabad} \\
- & Tunneling LTE RLC frames over WiFi channel for increased throughput with a scheduling algorithm that reduced waiting time and out of order delivery \newline \\
-
-January'16-August'16 & {\bf Efficient code generation for stencil computations on spherical domains} \\
-Advisor    & {\bf Dr. Ramakrishna Upadrasta, Professor, CSE department, IIT Hyderabad} \\
- & Efficient strategies for smashing a thin spherical domain with large number of points to minimize memory utilization and execution time. Execution tiled appropriately in space and time to minimize cache misses. \newline \\
-
-August'14-January'15 & {\bf X86 compiler for the language ‘COOL’ (a subset of Java)} \\
-Advisor    & {\bf Dr. Ramakrishna Upadrasta, Professor, CSE department, IIT Hyderabad} \\
-\newline \\ 
-\newline \\
-\newline \\
-August'14-January'15 & {\bf Enhancements to Minx OS} \\
-Advisor        & {\bf Dr. Bheemarjuna Reddy Tamma, Professor, CSE department, IIT Hyderabad} \\
-     & Modifications to Minix operating system to implement 2 new schedulers
-\newline \\ 
-}
+September'18-Present & {\bf A Unified Graph Framework for Achieving High-Performance across Algorithms, Graph Types,and Architectures} \\ 
+Advisor       & {\bf Prof. Saman Amarasinghe, Prof. Julian Shun} \\ 
+ & Generating effecient CUDA code for graph algorithms. New GraphIR for portable code generation across multiple platforms. \newline \\ 
 \end{longtable}
 
-%\section*{Skill Set}
 \begin{tabular}{l!{\VRule}l}
 Programming		&	X86/64 Assembly, C, C\texttt{++}\\
 Tools			&	LLVM\\
 %Tools			&	LLVM, Visual Studio, Git\\
 %Scripting		&	Python, Bash, Batch\\
 %Compiler-tools  &   Flex, Yacc
+\multicolumn{2}{l}{Some of my projects are hosted at \url{https://github.com/AjayBrahmakshatriya} } \\
 \end{tabular}
 
-{\sf Some of my projects are hosted at \url{https://github.com/AjayBrahmakshatriya} } \\
+\section*{Publications}
+\textbfx{Ajay Brahmakshatriya}, Emily Furst, Victor Ying, Claire Hsu, Changwan Hong, Max Ruttenberg, Yunming Zhang, Tommy Jung, Dustin Richmond, Michael Taylor, Julian Shun, Mark Oskin, Daniel Sanchez, and Saman Amarasinghe. Taming the Zoo: The Unified GraphIt Compiler Framework for Novel Architectures. To appear in \textitx{Proceedings of the IEEE/ACM International Symposium on Computer Architecture (ISCA), 2021}.
+\\ \\
+\textbfx{Ajay Brahmakshatriya}, and Saman Amarasinghe. BuildIt: A Type-Based Multi-stage Programming Framework for Code Generation in C++. 
+\textitx{Proceedings of the International Symposium on Code Generation and Optimization (CGO), 2021}.
+\\ \\
+\textbfx{Ajay Brahmakshatriya}, Yunming Zhang, Changwan Hong, Shoaib Kamil, Julian Shun, and Saman Amarasinghe. Compiling Graph Applications for GPUs with GraphIt. 
+\textitx{Proceedings of the International Symposium on Code Generation and Optimization (CGO), 2021}. \textbfx{Best Paper Award}. 
+\\ \\
+Jessica Ray, \textbfx{Ajay Brahmakshatriya}, Richard Wang, Shoaib Kamil, Albert Reuther, Vivienne Sze, and Saman Amarasinghe. Domain-Specific Language Abstractions for Compression.
+\textitx{Proceedings of the Data Compression Conference (DCC), 2021}. 
+\\ \\
+Yunming Zhang, \textbfx{Ajay Brahmakshatriya}, Xinyi Chen, Laxman Dhulipala, Shoaib Kamil, Saman Amarasinghe, and Julian Shun. Optimizing Ordered Graph Applications with GraphIt. 
+\textitx{Proceedings of the International Symposium on Code Generation and Optimization (CGO), 2020}. 
+\\ \\
+Yishen Chen, \textbfx{Ajay Brahmakshatriya}, Charith Mendis, Alex Renda, Eric Atkinson, Ondrej Sykora, Saman Amarasinghe, and Michael Carbin. BHive: A Benchmark Suite and Measurement Framework for Validating x86-64 Basic Block Performance Models. 
+\textitx{Proceedings of the IEEE International Symposium on Workload Characterization (IISWC), 2020}.
+\\ \\
+\textbfx{Ajay Brahmakshatriya}, Piyus Kedia, Hamed Nemati, Derrick McKee, Deepak Garg, Akash Lal, Aseem Rastogi, Anmol Panda, and Pratik Bhatu. CONFLLVM: A Compiler for Enforcing Data Confidentiality in Low-Level Code. 
+\textitx{Proceedings of the Fourteenth EuroSys Conference (EUROSYS), 2019}.
+\\ \\
+Prashant Sharma, \textbfx{Ajay Brahmakshatriya}, Thomas Valerrian Pasca, Bheemarjun Reddy Tamma, and Anthony Franklin. LWIR: LTE-WLAN Integration at RLC Layer with Virtual WLAN Scheduler for Efficient Aggregation. 
+\textitx{Proceedings of the IEEE Global Communications Conference (GLOBECOM), 2016}.
+%\section*{Skill Set}
+\\ \\ 
 
 
 %\section*{Academic Achievements and Experiences}
