@@ -15,3 +15,9 @@ website:
 clean:
 	rm -rf main/
 	rm -f *.log *.pdf *.out *.aux *.bbl  *.blg
+
+
+copy:
+	cp main.pdf /var/www/html/docs/CV_AjayBrahmakshatriya.pdf
+	cp main/main.html /var/www/html/cv/
+	cp main/main.css /var/www/html/cv
